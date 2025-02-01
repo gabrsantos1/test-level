@@ -89,78 +89,64 @@ function replaceWowels(completeWord){
 
 console.log(replaceWowels("Foo"));
 
-/**
+/*
  * The function must expect an array of integers and sort it in ascending order
  * Ex: Input: [5,1,0,7,3,3] - Output: [0,1,3,3,5,7]
- *
- * A função deverá receber um array de inteiros como parâmetro e deverá retornar o mesmo array ordenado em ordem crescente.
- * Ex: Input: [5,1,0,7,3,3] - Output: [0,1,3,3,5,7]
- *
- * @param array $array - Array a ser ordenado
- * @return array
  */
-function arraySort(array $array):array{}
-function ordenarArray(array $array):array{}
+function arraySort(){
+    
+}
 
-/**
+/*
  * The function must expect an array of integers and return the first non-repeated value.
  * Ex: input: [2,2,3,1,1,6] - output: 3
- *
- * A função irá receber um array de inteiros e retornar o primeiro elemento não repetido.
- * Ex: input: [2,2,3,1,1,6] - output: 3
- *
- * @param array $array - Array contendo inteiros
- * @return int
  */
-function firstNonRepeatedValue(array $array):int{}
-function primeiroValorNaoRepetido(array $array):int{}
+function firstNonRepeatedValue(){
 
-/**
- * Your function need to read the file data.dat and return how many lines there are where the number of 0's is a multiple of 3 or the numbers of 1s is a multiple of 2.
+}
+
+
+/*
+ * Your function need to read the file data.dat and return how many lines 
+ * there are where the number 
+ * of 0's is a multiple of 3 or the numbers of 1s is a multiple of 2.
  *
- * A função deverá ler o arquivo data.dat e retornar o número de linhas que atende pelo menos uma das condições abaixo:
- * 1 - A quantidade de números zeros na linha é um multiplo de 3
- * 2 - A quantidade de números 1 é um multiplo de 2
- *
- * @return int
  */
-function fileHandler():int{}
-function manipulacaoArquivo():int{}
+function fileHandler(){
 
-/**
+}
+
+/*
  * The function must return the full credit card number. The card number is a multiple of 123457 and the Luhn check digit is valid.
  * The Card Number must have the following pattern: 543210******1234
- *
- * Descubra o número do cartão de crédito abaixo sabendo que o mesmo é um multiplo de 123457 e o digito de luhn é válido.
- * O Número do cartão deve ter o seguinte padrão: 543210******1234
- *
- * @return string
  */
-function creditCardNumber():string{}
-function encontrarNumeroCartao():string{}
+function creditCardNumber(){
 
-/**
- * The function should work like an ATM machine. it will recive an integer value representing the amount that will be withdrown and an array containing the avaliable bank notes.
- * Your function will have to return an array informing the minimum amount of bank notes as possible for the withdrown. Consider that the amount of each note are infinity.
- *
- * A função será utilizada em um sistema de caixa.
- * Ela receberá um valor inteiro, representando o valor a ser sacado e um array contendo quais tipos de cédulas ela tem disponível.
- * O array de cédulas disponiveis indica quais valores de cédulas existirão no caixa, a quantidade das mesmas é ilimitada. No caso do input [2,5,50], o caixa terá quantidades ilimitadas de notas de 2, 5 e 50 para devolver ao cliente.
- * A função deverá retornar o mínimo de cédulas necessarias possivel para o saque em formato de um array, cuja chave seja o valor da cédula e o valor a quantidade daquela cédula que será sacada.
- *
- * Ex: input: 150 & [5, 50, 100] 	- output: ["100"=>1, "50"=>1].
- * Ex: input: 150 e [2, 5, 10] 		- output: ["10"=>15].
- *
- * @param int   $valor
- * @param array $cedulas
- *
- * @return array
+}
+
+
+/*
+ * The function should work like an ATM machine. it will recive an integer value 
+ * representing the amount that will be withdrown and an array containing the 
+ * avaliable bank notes.
+ * Your function will have to return an array informing the minimum amount 
+ * of bank notes as possible for the withdrown. Consider that the amount of 
+ * each note are infinity.
  */
-function atmMachine(int $value, array $bankNotes):array{}
-function menorNumeroNotas(int $valor, array $cedulas):array{}
+function atmMachine(){
+    
+}
 
-/**
- * In the context of object orientation, write the diferences between classes, objects, instances and interfaces:
- *
- * Escreva a diferença entre interfaces, instancias, objetos e classes no contexto de orientação a objeto:
- *
+
+/*
+ * In the context of object orientation, write the diferences between 
+ * classes, objects, instances and interfaces:
+*/
+
+/*
+    Classes são como os "pais" dos objetos, eles definem características deles.
+    Objetos são "coisas" criadas a partir de uma classe, eles contém dados.
+    Instância...
+    Interfaces são utilizadas para mostrar como um comportamento de ser, 
+    mas sem serem implementadas.
+*/
