@@ -63,9 +63,14 @@ function reverseString(backWord){
 
     let word = ""
 
+    for(let i = backWord.length - 1; i >= 0; i--){
+        word += backWord[i];        
+    }
 
-
+    return word;
 }
+
+console.log(reverseString("foo"));
 
 /*
  * The function must replace all the vowels with '?' and return the result string
@@ -134,7 +139,7 @@ function creditCardNumber(){
  * each note are infinity.
  */
 function atmMachine(){
-    
+
 }
 
 
