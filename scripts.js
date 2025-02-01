@@ -18,22 +18,24 @@ function correspondingMonth(month){
 console.log(correspondingMonth(1));
 console.log(correspondingMonth(13));
 
-/**
+/*
  * The function should recive an array with at least 3 itens and return the arithmetic average of all the itens.
  * If the recived array contains less then 3 itens, the function should return the boolean false.
  * Ex: input: [4,6,8] 	- output 6
  * Ex: input: [1,2] 	- output false
- *
- * A função deverá receber um array com pelo menos 3 itens e retornar a média simples de todos os itens do array.
- * Caso o array recebido possua menos que 3 itens, deverá ser retornado o boleano false.
- * Ex: input: [4,6,8] 	- output 6
- * Ex: input: [1,2] 	- output false
- *
- * @param array $notas
- * @return int|bool
  */
-function arithmeticAverage(array $integers){}
-function mediaSimples(array $notas){}
+function arithmeticAverage(firstInput, secInput, thInput){
+
+    if(firstInput != null && secInput != null && thInput != null){
+        return (firstInput + secInput + thInput) / 3;
+    } else {
+        return "False";
+    }
+
+}
+
+console.log(arithmeticAverage(4, 6, 8));
+console.log(arithmeticAverage(1, 2));
 
 /**
  * The function should expect an array containing integers greater than zero and return the amount of even values contained in it.
