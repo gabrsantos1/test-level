@@ -37,18 +37,23 @@ function arithmeticAverage(firstInput, secInput, thInput){
 console.log(arithmeticAverage(4, 6, 8));
 console.log(arithmeticAverage(1, 2));
 
-/**
+/*
  * The function should expect an array containing integers greater than zero and return the amount of even values contained in it.
  * Ex: input: [1,2,3,4,5] - output: 2
- *
- * Recebe um array de inteiros maiores que zero e retorna a quantidade de números pares existentes no array
- * Ex: input: [1,2,3,4,5] - output: 2
- *
- * @param array $array
- * @return int
  */
-function oddOrEven(int $number):bool{}
-function parOuImpar(int $numero):bool{}
+function oddOrEven(numberArray){
+
+    let numbers = 0;
+
+    for (let nb of numberArray){
+        if(nb % 2 === 0){
+            numbers++;
+        }
+    }
+    return numbers;
+}
+
+console.log(oddOrEven([1, 2, 3, 4, 5]));
 
 /**
  * The function should expect a string and return it backwards.
