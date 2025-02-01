@@ -55,31 +55,39 @@ function oddOrEven(numberArray){
 
 console.log(oddOrEven([1, 2, 3, 4, 5]));
 
-/**
+/*
  * The function should expect a string and return it backwards.
  * Ex: input: "foo" - output: "oof"
- *
- * A função deverá receber uma string e retornar a mesma invertida.
- * Ex: input: "bar" - output: "rab"
- *
- * @param string $string
- * @return string
  */
-function reverseString(string $string):string{}
-function inverterString(string $string):string{}
+function reverseString(backWord){
 
-/**
+    let word = ""
+
+
+
+}
+
+/*
  * The function must replace all the vowels with '?' and return the result string
  * Ex: input: 'Foo' - output: 'F??'
- *
- * A função deverá receber uma string e substituir todas as vogais da mesma pelo sinal '?'
- * Ex: input: 'Bar' - output: 'B?r'
- *
- * @param string $string
- * @return string
  */
-function replaceWowels(string $string):string{}
-function substituirCaracteres(string $string):string{}
+function replaceWowels(completeWord){
+
+    let replacedWord = "";
+    const vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+
+    for(let i = 0; i < completeWord.length; i++){
+        if(vowels.includes(completeWord[i])){
+            replacedWord += "?";
+        } else {
+            replacedWord += completeWord[i];
+        }
+    }
+
+    return replacedWord;
+}
+
+console.log(replaceWowels("Foo"));
 
 /**
  * The function must expect an array of integers and sort it in ascending order
